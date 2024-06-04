@@ -20,7 +20,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'TechVJBot')
 API_ID = int(environ.get('API_ID', '22182189'))
 API_HASH = environ.get('API_HASH', '5e7c4088f8e23d0ab61e29ae11960bf5')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7326935808:AAHrHHih0TcIPNx80ZnQQxyzct2Ekrkp8SM")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
@@ -30,10 +30,10 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/How_To_Open_Linkl")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
 # Admins, Channels & Users
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002131110143'))
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6073523936').split()]
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002070853757'))
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6807518752').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002055683410').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '-1002070853757').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # auth_channel means force subscribe channel.
